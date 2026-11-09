@@ -1,0 +1,14 @@
+{
+  "name": "Waqar MD Mini",
+  "description": "WhatsApp bot - Marco Malik MD",
+  "repository": "https://github.com/YOUR_GITHUB_USER/waqar-md-mini",
+  "keywords": ["whatsapp", "bot"],
+  "buildpacks": [{ "url": "heroku/nodejs" }],
+  "env": {
+    "GITHUB_TOKEN": { "description": "GitHub token (repo scope) for session storage", "required": true },
+    "GITHUB_REPO": { "description": "user/repo for sessions", "required": true },
+    "CHANNEL_JID": { "description": "Your WhatsApp channel JID (xxx@newsletter)", "required": false },
+    "TELEGRAM_BOT_TOKEN": { "description": "Telegram bot token", "required": false },
+    "TELEGRAM_CHAT_ID": { "description": "Telegram chat id for notifications", "required": false }
+  }
+}
